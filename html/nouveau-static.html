@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>L'écho de l'EAD | Nouvel article</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.php">Accueil</a></li>
+            <li><a href="../php/articles.php">Toute l'actu</a></li>
+            <li><a href="../php/recherche.php">Recherche</a></li>
+            <li><a href="../html/redac.html">La rédac'</a></li>
+            <li><a href="#">jbigoude</a>
+                <ul>
+                    <li><a href="../php/compte.php">Mon profil</a></li>
+                    <li><a href="../php/edition.php">Nouvel article</a></li>
+                    <li><a href="../php/deconnexion.php">Se déconnecter</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header><img src="../images/titre.png" alt="L'écho de l'EAD" width="685" height="83">
+        <h1>Nouvel article</h1>
+    </header>
+    <main>
+        <form method="post" action="nouveau.php">
+            <section>
+                <h2>Contenu de l'article</h2>
+                <table style="width: 90%;">
+                    <tr>
+                        <td style="width: 100px;">Titre : </td>
+                        <td><input type="text" name="titre" value="" style="width: 500px"></td>
+                    </tr>
+                    <tr>
+                        <td>Résumé :</td>
+                        <td><textarea name="resume" style="height: 60px;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Texte :</td>
+                        <td><textarea name="texte"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="btnCreer" value="Créer l'article"><input type="reset" value="Réinitialiser"></td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+    </main>
+    <footer>&copy; Master EAD Informatique - Octobre 2019 - Tous droits réservés</footer>
+</body>
+
+</html>
